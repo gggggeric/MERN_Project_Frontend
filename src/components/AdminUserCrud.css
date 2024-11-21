@@ -1,0 +1,190 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Container for the CRUD operations */
+.user-crud-container {
+    max-width: 1200px; /* Increase max-width for better layout */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #8e44ad;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(142, 68, 173, 0.5);
+    animation: fadeIn 0.5s; /* Optional: fade-in animation */
+}
+
+/* Flex layout for content */
+.user-crud-content {
+    display: flex;
+}
+
+/* User management form styles */
+.user-management {
+    flex: 1;
+    margin-right: 20px; /* Space between form and table */
+}
+
+/* Form styling */
+.user-crud-form {
+    display: flex;
+    flex-direction: column; /* Stack the input fields vertically */
+    gap: 10px; /* Space between input fields */
+}
+
+/* Table styles */
+.all-users-container {
+    flex: 2; /* Adjust this to control width of the table */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+}
+
+.user-crud-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Space above the table */
+}
+
+.user-crud-table th, .user-crud-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.user-crud-table th {
+    background-color: #f2f2f2;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Space between action buttons */
+}
+
+/* Button styles */
+.create-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #218838;
+}
+
+.edit-button {
+    background-color: #ffc107; /* Yellow */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+.delete-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Modal styles */
+.edit-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is above other elements */
+}
+
+.edit-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Fixed width for modal */
+}
+
+/* Form in Modal */
+.edit-modal-content form {
+    display: flex;
+    flex-direction: column; /* Stack input fields */
+    gap: 10px; /* Space between fields */
+}
+
+/* Button styles in modal */
+.save-btn {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* Error message styles */
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Back button styles */
+.back-button {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space below the button */
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

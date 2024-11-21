@@ -1,0 +1,98 @@
+body {
+    background-color: #535C91; /* Background color for the entire page */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #9290C3; /* Light purple color for the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-card {
+    flex: 0.4;
+    padding: 20px;
+    background-color: #fff; /* White background for form card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff; /* White background for product card */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000; /* Black color for headings */
+    font-family: 'Cursive', cursive; /* Cursive font for Create Product and Your Products */
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-button {
+    background-color: yellow;
+    color: black;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

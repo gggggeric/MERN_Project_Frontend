@@ -1,0 +1,288 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem;
+    font-family: cursive; /* Set all font to cursive */
+    font-size: 1rem;
+}
+
+.left-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.store-name {
+    font-size: 1.5rem;
+    color: #8e44ad;
+    text-decoration: none; /* Ensure no underline */
+    font-family: cursive; /* Ensure cursive font */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* If the .store-name is within a link, also target the link specifically */
+.logo-link a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home-link,
+.edit-profile-link,
+.view-orders-link,
+.view-submitted-reviews-link { /* Added .view-submitted-reviews-link */
+    display: inline-flex; /* Use inline-flex to properly align icon and text */
+    align-items: center; /* Vertically center the icon and text */
+    color: #8e44ad;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.home-link:hover,
+.edit-profile-link:hover,
+.view-orders-link:hover,
+.view-submitted-reviews-link:hover { /* Added hover effect for .view-submitted-reviews-link */
+    color: #5e3370;
+}
+
+/* Button styling */
+.nav-btn {
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold; /* Ensures bold text */
+    font-size: 1.1rem; /* Increases the text size */
+    cursor: pointer;
+    background-color: #8e44ad;
+    color: #ffffff !important;
+    display: flex;
+    align-items: center; /* Aligns icon and text vertically */
+    justify-content: center; /* Centers text and icon horizontally */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centers the text */
+}
+
+.nav-btn:hover {
+    background-color: #5e3370;
+}
+
+.nav-btn .icon {
+    font-size: 1.3rem; /* Larger icon */
+    margin-right: 0.8rem; /* Adjusts spacing between icon and text */
+}
+
+/* Login and Register button styling */
+.icon-btn {
+    text-decoration: none;
+    background-color: #8e44ad;
+    color: #ffffff !important;
+    font-weight: bold; /* Bold text */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers text and icon */
+    padding: 0.7rem 2rem; /* Adds balanced padding */
+    border-radius: 5px;
+    margin-right: 1rem; /* Adds separation between buttons */
+    transition: background-color 0.3s ease;
+}
+
+.icon-btn:hover {
+    background-color: #5e3370;
+}
+
+/* User email and dropdown */
+.user-email-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.user-email {
+    font-size: 1.1rem;
+    color: #8e44ad;
+    font-weight: 600;
+    margin-left: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+    display: inline-block;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 100;
+    padding: 0;
+    min-width: 250px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: #8e44ad;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: #f2f2f2;
+}
+
+.dropdown-item .icon {
+    margin-right: 0.5rem;
+}
+
+.logout-btn {
+    padding: 0.75rem 1rem;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    margin-top: 0;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.profile-container {
+    position: relative;
+    cursor: pointer;
+}
+.cart-link {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust space as needed */
+    color: #8e44ad; /* Ensure consistent color with other links */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Match font weight */
+}
+
+.cart-link:hover {
+    color: #5e3370; /* Change color on hover */
+}
+
+.icon {
+    margin-right: 0.5rem; /* Adjust spacing between icon and text uniformly */
+    font-size: 1.3rem; /* Match the size of other icons */
+}
+
+/* Styling for View Orders link */
+.view-orders-link,
+.view-submitted-reviews-link { /* Styling both View Orders and View Submitted Reviews uniformly */
+    display: inline-flex; /* Ensures icons align properly */
+    align-items: center; /* Vertically centers the icon and text */
+    color: #8e44ad;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.view-orders-link:hover,
+.view-submitted-reviews-link:hover {
+    color: #5e3370; /* Change color on hover */
+}
+
+.view-orders-link .icon,
+.view-submitted-reviews-link .icon { 
+    font-size: 1.3rem; /* Ensures consistent icon size */
+    margin-right: 0.5rem; /* Adjust spacing uniformly */
+}
+
+/* View Submitted Reviews link styling */
+.view-submitted-review-link {
+    display: inline-block;
+    color: #8e44ad;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center; /* Ensures the icon and text are aligned */
+}
+
+.view-submitted-review-link:hover {
+    color: #5e3370;
+}
+
+.view-submitted-review-link .icon {
+    margin-right: 0.5rem; /* Adjusted to ensure uniform spacing */
+    font-size: 1.3rem; /* Icon size */
+}
+
+.separator {
+    border-left: 2px solid #ccc; /* Light grey color for separator */
+    height: 24px; /* Adjust the height of the separator */
+    margin: 0 12px; /* Space out the separator from the links */
+    display: inline-block; /* Make the separator align next to the links */
+}
+/* Style the profile picture to be small and circular */
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.edit-profile-link {
+    font-size: 16px;
+    font-weight: bold;
+}
+.username {
+    color: #8e44ad; /* Set the default color to #8e44ad */
+    font-weight: bold; /* Make the text bold */
+}
